@@ -1,0 +1,23 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: hsl(200, 100%, 85%);
+  color: hsl(200, 100%, 10%);
+  font-family: sans-serif;
+}
+
+.blurred {
+  filter: blur(3px);
+}
+
+.header {
+  text-align: center;
+}
+
+.header-current-wave-range {
+  font-size: 2rem;
+}
+

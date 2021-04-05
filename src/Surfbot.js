@@ -5,11 +5,11 @@ import pika from './assets/pika.png'
 export default function Surfbot() {
   useEffect(() => {
     getWaveData()
-  }, [])
+  })
 
   async function getWaveData() {
     const url = "https://services.surfline.com/kbyg/spots/forecasts/wave?spotId=5842041f4e65fad6a7708b35&days=1&intervalHours=24"
-    const waveData = await axios
+    await axios
       .get(`${url}`)
       .catch(e => {
         console.log(e)

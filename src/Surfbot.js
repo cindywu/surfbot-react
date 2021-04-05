@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import axios from 'axios'
+import pika from './assets/pika.png'
 
 export default function Surfbot() {
   useEffect(() => {
@@ -41,7 +42,7 @@ export default function Surfbot() {
         <h1>surfbot</h1>
         <img 
           data-current-icon 
-          src="https://i.imgur.com/XYahuls.png" 
+          src={pika} 
           alt="surfing-pika"/>
         <div className="header-current-wave-range">
           <span data-wave-min>1</span>-<span data-wave-max>2</span> ft</div>
